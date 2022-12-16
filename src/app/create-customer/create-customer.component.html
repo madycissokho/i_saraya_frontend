@@ -1,0 +1,43 @@
+<div class="col-md-4 offset-md-3">
+    <h3> Create Customer</h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="customer.firstName" name="firstName">
+
+        </div>
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="customer.lastName" name="lastName">
+
+        </div>
+        <div class="form-group">
+            <label> Phone Number </label>
+            <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="customer.phoneNumber" name="phoneNumber">
+
+        </div>
+        <div class="form-group">
+            <label> Email ID</label>
+            <input type="text" class="form-control" id="emailId" [(ngModel)]="customer.emailId" name="emailId">
+
+        </div>
+        <div class="form-group">
+            <label> Description </label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="customer.description" name="description">
+
+        </div>
+        <div class="form-group">
+            <label> Products Purchased</label>
+            <input type="text" class="form-control" id="productsPurchased" [(ngModel)]="customer.productsPurchased" name="productsPurchased">
+
+        </div>
+        <div class="form-group">
+            <label> Price </label>
+            <input type="text" class="form-control" id="price" [(ngModel)]="customer.price" name="price">
+
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>
